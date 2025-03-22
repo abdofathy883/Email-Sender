@@ -102,7 +102,7 @@ namespace Email_Sender
             {
                 await client.ConnectAsync("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
                 
-                await client.AuthenticateAsync("abdofathy883@gmail.com", "vmgoqytmkjfvvyln");
+                await client.AuthenticateAsync("abdofathy883@gmail.com", "your-app-password");
                 await client.SendAsync(message);
                 await client.DisconnectAsync(true);
             }
